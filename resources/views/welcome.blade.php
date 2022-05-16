@@ -36,6 +36,7 @@
     </div>
     <div class="card-body">
         <button class="btn-aq">Silahkan Pencet</button>
+        <a href="login">login</a>
     </div>
     <!-- /.card-body -->
     <div class="card-footer">
