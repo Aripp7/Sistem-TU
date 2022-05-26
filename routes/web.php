@@ -14,9 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
+});
+Route::get('/master', function () {
+    return view('datamaster');
 });
 
 Route::get('/login', function () {
     return view('login.login');
+});
+Route::get('/siswa', function () {
+    return view('siswa');
+});
+Route::get('/mapel', function () {
+    return view('mapel');
+});
+
+Route::get('/tendik', function () {
+    return view('tendik');
 });

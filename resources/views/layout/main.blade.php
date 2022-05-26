@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="icon" href="/adminlte/dist/img/smaguguak.ico" type="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE {{ isset($title) ? ' | '.$title : ''}}</title>
+    <title> {{ isset($title) ? ' '.$title : ''}}</title>
 
     @include('layout.inc.ext-css')
     @stack('css')
