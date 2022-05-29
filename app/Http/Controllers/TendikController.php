@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Tendik;
 use Illuminate\Http\Request;
+use PHPUnit\Framework\Test;
 
 class TendikController extends Controller
 {
@@ -14,7 +15,8 @@ class TendikController extends Controller
      */
     public function index()
     {
-        //
+        $datas = Tendik::all();
+        return view('tendik.index', compact('datas'));
     }
 
     /**
@@ -24,7 +26,8 @@ class TendikController extends Controller
      */
     public function create()
     {
-        //
+        $model = new Tendik();
+        return view('tendik.create', compact('model'));
     }
 
     /**
@@ -35,51 +38,69 @@ class TendikController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new Tendik;
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->save();
+
+
+
+        return redirect('tendik');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Tendik  $tendik
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Tendik $tendik)
+    public function show($id)
     {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Tendik  $tendik
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Tendik $tendik)
+    public function edit($id)
     {
-        //
+        $model =  Tendik::find($id);
+        return view('pegawai.edit', compact('model'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Tendik  $tendik
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Tendik $tendik)
+    public function update(Request $request, $id)
     {
-        //
+        $model =  Tendik::find($id);
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->update();
+
+
+
+        return redirect('tendik');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Tendik  $tendik
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Tendik $tendik)
+    public function destroy($id)
     {
-        //
+        $model =  Tendik::find($id);
+        $model->delete();
+        return redirect('tendik');
     }
 }

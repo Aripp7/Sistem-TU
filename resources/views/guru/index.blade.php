@@ -1,4 +1,4 @@
-@extends('layout.main',['title' => 'Data Siswa '] )
+@extends('layout.main',['title' => 'Data Guru '] )
 
 @section('content-header')
 

@@ -14,6 +14,8 @@ class GuruController extends Controller
      */
     public function index()
     {
+        $datas = Guru::all();
+        return view('guru.index', compact('datas'));
         //
     }
 
@@ -24,7 +26,8 @@ class GuruController extends Controller
      */
     public function create()
     {
-        //
+        $model = new Guru();
+        return view('guru.add', compact('model'));
     }
 
     /**
@@ -35,51 +38,69 @@ class GuruController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new Guru();
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->save();
+
+
+
+        return redirect('guru');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Guru  $guru
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Guru $guru)
+    public function show($id)
     {
-        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Guru  $guru
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Guru $guru)
+    public function edit($id)
     {
-        //
+        $model =  Guru::find($id);
+        return view('guru.edit', compact('model'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Guru  $guru
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Guru $guru)
+    public function update(Request $request, $id)
     {
-        //
+        $model =  Guru::find($id);
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->update();
+
+
+
+        return redirect('guru');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Guru  $guru
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Guru $guru)
+    public function destroy($id)
     {
-        //
+        $model =  Guru::find($id);
+        $model->delete();
+        return redirect('guru');
     }
 }

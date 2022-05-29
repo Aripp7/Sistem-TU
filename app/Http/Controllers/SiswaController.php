@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Guru;
 use App\Models\Siswa;
 use Illuminate\Http\Request;
 
@@ -14,7 +15,8 @@ class SiswaController extends Controller
      */
     public function index()
     {
-        //
+        $datas = Siswa::all();
+        return view('siswa.index', compact('datas'));
     }
 
     /**
@@ -24,7 +26,8 @@ class SiswaController extends Controller
      */
     public function create()
     {
-        //
+        $model = new Siswa();
+        return view('siswa.add', compact('model'));
     }
 
     /**
@@ -35,16 +38,24 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new Siswa();
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->save();
+
+
+
+        return redirect('siswa');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Siswa $siswa)
+    public function show($id)
     {
         //
     }
@@ -52,34 +63,45 @@ class SiswaController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Siswa $siswa)
+    public function edit($id)
     {
-        //
+        $model =  Siswa::find($id);
+        return view('siswa.edit', compact('model'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Siswa $siswa)
+    public function update(Request $request, $id)
     {
-        //
+        $model =  Siswa::find($id);
+        $model->nama = $request->nama;
+        $model->alamat = $request->alamat;
+        $model->nohp = $request->nohp;
+        $model->update();
+
+
+
+        return redirect('siswa');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Siswa  $siswa
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Siswa $siswa)
+    public function destroy($id)
     {
-        //
+        $model =  Siswa::find($id);
+        $model->delete();
+        return redirect('siswa');
     }
 }

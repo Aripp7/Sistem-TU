@@ -7,5 +7,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tendik extends Model
 {
-    use HasFactory;
+    protected $table = "tendik";
 }
