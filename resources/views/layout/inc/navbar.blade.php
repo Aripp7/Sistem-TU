@@ -10,29 +10,26 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
-        <!-- Navbar Search -->
-        <li class="nav-item">
-            <a class="nav-link" data-widget="navbar-search" href="#" role="button">
-                <i class="fas fa-search"></i>
-            </a>
+        <!-- Navbar profile -->
+        <li class="dropdown">
+            <img src="/public/img/icons8-user-80.png" alt="">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Admin<span class="caret"></span> <i class="fas fa-user"></i></a>
 
-            <div class="navbar-search-block">
-                <form class="form-inline">
-                    <div class="input-group input-group-sm">
-                        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
-                        <div class="input-group-append">
-                            <button class="btn btn-navbar" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                            <button class="btn btn-navbar" type="button" data-widget="navbar-search">
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                </form>
-            </div>
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a href="profile" class="btn btn-link navbar-btn navbar-link">Profile</a>
+                </li>
+                <li>
+                    <form action="/logout" method="post"><button type="submit" class="btn btn-link navbar-btn navbar-link">Log Out</button></form>
+                </li>
+
+            </ul>
         </li>
 
 
     </ul>
+
+
+
 </nav>
