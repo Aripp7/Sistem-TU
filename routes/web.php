@@ -24,7 +24,7 @@ Route::get('/tambah-guru', [GuruController::class, 'tambah'])->name('tambah-guru
 Route::resource('siswa', SiswaController::class);
 Route::post('/simpan-siswa', [SiswaController::class, 'store'])->name('simpan-siswa');
 Route::get('/siswa', [SiswaController::class, 'index'])->name('data-siswa');
-Route::get('/tambah-siswa', [SiswaController::class, 'tambah'])->name('tambah-siswa');
+Route::get('/addSiswa', [SiswaController::class, 'create'])->name('tambah-siswa');
 
 Route::resource('tendik', TendikController::class);
 Route::post('/simpan-tendik', [TendikController::class, 'store'])->name('simpan-tendik');

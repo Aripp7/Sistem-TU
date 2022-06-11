@@ -8,7 +8,7 @@
     <!-- Sidebar -->
     <div class="sidebar">
 
-        <div class="form-inline">
+        <!-- <div class="form-inline">
             <div class="input-group" data-widget="sidebar-search">
                 <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
@@ -17,7 +17,7 @@
                     </button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
@@ -279,15 +279,7 @@
                     </ul>
                 </li>
 
-                <li class="nav-item">
-                    <a href="../calendar.html" class="nav-link">
-                        <i class="nav-icon far fa-calendar-alt"></i>
-                        <p>
-                            Surat
-                            <!-- <span class="badge badge-info right">2</span> -->
-                        </p>
-                    </a>
-                </li>
+
                 <li class="nav-item">
                     <a href="../gallery.html" class="nav-link">
                         <i class="nav-icon far fa-image"></i>
@@ -304,14 +296,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon far fa-envelope"></i>
-                        <p>
-                            Berkas
-                            <i class="fas fa-angle-left right"></i>
-                        </p>
-                    </a>
+
 
             </ul>
         </nav>

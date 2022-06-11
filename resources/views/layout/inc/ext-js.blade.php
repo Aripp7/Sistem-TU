@@ -19,6 +19,9 @@
     <script src="{{ url('/adminlte/plugins/datatables-buttons/js/buttons.print.min.js')}}"></script>
     <script src="{{ url('/adminlte/plugins/datatables-buttons/js/buttons.colVis.min.js')}}"></script>
 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     <script>
         $(function() {
             $("#example1").DataTable({
@@ -38,3 +41,48 @@
             });
         });
     </script>
+    <script>
+        $(function() {
+            bsCustomFileInput.init();
+        });
+    </script>
+    <script>
+        $('.delete-confirm').on('click', function(event) {
+            event.preventDefault();
+            const url = $(this).attr('href');
+            swal({
+                title: 'Are you sure?',
+                text: 'This record and it`s details will be permanantly deleted!',
+                icon: 'warning',
+                buttons: ["Cancel", "Yes!"],
+            }).then(function(value) {
+                if (value) {
+                    window.location.href = url;
+                }
+            });
+        });
+    </script>
+
+    <script>
+        var sayHello = () => swal({
+            title: 'Hapus data ?',
+            text: "Klik Hapus untuk menghapus data !",
+            type: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Hapus'
+        }).then((result) => {
+            if (result.value) {
+                return form.submit();
+            }
+        });
+    </script>
+    <script>
+        var alerthapus = function() {
+
+        }
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="{{ url('/adminlte/plugins/bootstrap/js/sweetalert2.min.js') }}"></script>

@@ -23,24 +23,29 @@
 <!-- Default box -->
 <div class="card">
     <div class="card-header">
-        <h3 class="card-title">Title</h3>
+        <h3 class="card-title">Selamat Datang</h3>
 
         <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
-                <i class="fas fa-minus"></i>
-            </button>
-            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
-                <i class="fas fa-times"></i>
-            </button>
+
         </div>
     </div>
     <div class="card-body">
-        <button class="btn-aq">Silahkan Pencet</button>
-        <a href="login">login</a>
+        <div class="form-group" style="width: 50%">
+            <label for="cari">Pencarian Data dengan Algorima Boyer-Moore</label>
+            <input class="form-control" id="cari" aria-describedby="cari" required placeholder="Masukkan Kata/Kalimat"></input>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Mulai Pencarian</button>
+        <div style="margin-top: 10px;">
+            <label for="">Kecepatan Pencarian : -</label>
+
+        </div>
+
+
     </div>
     <!-- /.card-body -->
     <div class="card-footer">
-        Footer
+
     </div>
     <!-- /.card-footer-->
 </div>
