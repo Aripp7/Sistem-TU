@@ -34,26 +34,14 @@ Route::get('/tambah-tendik', [SiswaContTendikControllerroller::class, 'tambah'])
 
 
 Route::get('/', function () {
+    return view('index');
+});
+
+
+Route::get('/adminTU', function () {
+    return view('login.login');
+});
+
+Route::get('/dashboard', function () {
     return view('dashboard');
 });
-// Route::get('/master', function () {
-//     return view('datamaster');
-// });
-
-// Route::get('/login', function () {
-//     return view('login.login');
-// });
-// Route::get('/siswa', function () {
-//     return view('siswa');
-// });
-// Route::get('/mapel', function () {
-//     return view('mapel');
-// });
-
-// Route::get('/tendik', function () {
-//     return view('tendik');
-// });
-
-// Route::get('/guru', function () {
-//     return view('guru');
-// });
