@@ -27,7 +27,7 @@ class TendikController extends Controller
     public function create()
     {
         $model = new Tendik();
-        return view('tendik.create', compact('model'));
+        return view('tendik.add', compact('model'));
     }
 
     /**

@@ -9,10 +9,8 @@
         </div>
         <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                <a href="addSiswa">
-                    <button type="button" class="btn btn-primary">Tambah Data Siswa</button>
-
-                </a>
+                <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
+                <li class="breadcrumb-item active">Data Siswa</li>
             </ol>
         </div>
     </div>
@@ -20,18 +18,22 @@
 
 
 <body class="hold-transition sidebar-mini">
+
     <section class="content">
+
         <div class="container-fluid">
+
             <div class="row">
                 <div class="col-12">
 
                     <div class="card">
-
-
-
+                        <ol class="breadcrumb float-sm-left" style="margin-left: 20px; margin-top: 10px;">
+                            <a href="addSiswa" class="btn btn-primary">
+                                <i class="fa fa-plus"></i>
+                                Tambah Data Siswa
+                            </a>
+                        </ol>
                         <td>
-
-
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -65,54 +67,90 @@
                                             <td>{{ $values->nama_ibu }}</td>
 
 
-                                            <td><a href="{{url('siswa',$values->id.'/edit')}}" class="btn btn-info" style="margin-bottom: 5px;">Update</a>
+                                            <!-- <td style="display: flex;">
+                                                <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
+                                                    <button class="btn btn-success btn-xs shadow">
+                                                        <span class="fas fa-edit"></span>
+                                                    </button>
+                                                </a>
 
-
-                                                <form id="delete-confirm" action="{{url('siswa',$values->id)}}" method="POST">
-
+                                                <form action="{{url('siswa',$values->id)}}" method="POST" data-toggle="modal" data-target="#deleteCategory">
                                                     @csrf
-
                                                     <input type="hidden" name="_method" value="delete">
-                                                    <button type="submit" class="btn btn-danger">Hapus</button>
+                                                    <button type="submit" class="btn btn-danger btn-xs shadow">
+                                                        <span class="fas fa-trash"></span>
+                                                    </button>
 
                                                 </form>
-                                            </td>
+                                            </td> -->
+                                            <td class="text-center">
+                                                <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
+                                                    <button class="btn btn-success btn-xs shadow">
+                                                        <span class="fas fa-edit"></span>
+                                                    </button>
+                                                </a>
+                                                <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}" method="POST">
 
+                                                    @csrf
+                                                    <input type="hidden" name="_method" value="delete">
+
+                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
+                                                </form>
+                                            </td>
                                         </tr>
                                         @endforeach
                                     </tbody>
-
                                 </table>
                             </div>
-                            <!-- /.card-body -->
                     </div>
-                    <!-- /.card -->
                 </div>
-                <!-- /.col -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container-fluid -->
+
     </section>
-    <!-- /.content -->
-    </div>
-    <!-- /.content-wrapper -->
+    <!-- Modal -->
+    <!-- <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Hapus?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Yakin Mengahapus?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">tidak</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
-    <!-- Control Sidebar -->
-    <aside class="control-sidebar control-sidebar-dark">
-        <!-- Control sidebar content goes here -->
-    </aside>
-    <!-- /.control-sidebar -->
-    </div>
-    <!-- ./wrapper -->
 
-
-
-
+    <!-- <div class="modal fade" id="deleteCategory" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="deleteCategory" aria-hidden="true">
+        <div class="modal-dialog modal-sm" role="document">
+            <form>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Perhatian!</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        Apakan anda yakin ingin menghapus {{ $values->nama }} ?
+                        <input type="hidden" name="_method" value="delete">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn bg-white" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-danger">hapus</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div> -->
 </body>
-
-
-
-
 @endsection
-@section('content')

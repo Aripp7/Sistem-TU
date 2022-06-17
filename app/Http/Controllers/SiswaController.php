@@ -89,7 +89,20 @@ class SiswaController extends Controller
 
 
 
-        return redirect('siswa');
+        if ($model) {
+            return redirect()
+                ->route('siswa.index')
+                ->with([
+                    'success' => 'Post has been updated successfully'
+                ]);
+        } else {
+            return redirect()
+                ->back()
+                ->withInput()
+                ->with([
+                    'error' => 'Some problem has occured, please try again'
+                ]);
+        }
     }
 
     /**
@@ -102,6 +115,8 @@ class SiswaController extends Controller
     {
         $model =  Siswa::find($id);
         $model->delete();
+
+
         return redirect('siswa');
     }
 }

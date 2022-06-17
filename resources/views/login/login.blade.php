@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>AdminLTE 3 | Log in</title>
+    <title>Selamat Datang Administrator</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -16,19 +16,32 @@
     <link rel="stylesheet" href="/adminlte/dist/css/adminlte.min.css">
 </head>
 
-<body class="hold-transition login-page">
-    <div class="login-box">
-        <!-- <div class="login-logo">
-            <a href=""><b>Selamat Datang</b></a>
-        </div> -->
-        <!-- /.login-logo -->
+<body class="hold-transition login-page" style="background-image: url('adminlte/dist/img/latar sma.jpg'); background-size: cover; width:auto;">
+
+    <!-- @if(session()->has('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{session('success')}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+    @endif
+
+    @if(session()->has('loginErorr'))
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{session('loginErorr')}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+    @endif -->
+
+
+    <div class="login-box ">
         <div class="card">
             <div class="card-body login-card-body">
-                <p class="login-box-msg"><b>Selamat Datang</b></p>
+                <p class="login-box-msg"><b>Selamat Datang Administrator</b></p>
 
-                <form action="/adminlte/index3.html" method="post">
+                <form action="{{ route('postLogin') }}" method="POST">
+                    @csrf
                     <div class="input-group mb-3">
-                        <input type="username" class="form-control" placeholder="Username">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>
@@ -36,7 +49,7 @@
                         </div>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="password" class="form-control" placeholder="Password">
+                        <input type="password" class="form-control" id="password" name="password" placeholder="Password" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-lock"></span>
@@ -46,25 +59,19 @@
                     <div class="row">
 
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
-                            <a href="dashboard">guest</a>
+                            <input type="submit" class="btn btn-primary btn-block" value="Login"></input>
+                            <a href="dashboard">Lupa Password?</a>
                         </div>
-                        <!-- /.col -->
+
+
                     </div>
-                </form>
-
-
-                <!-- /.social-auth-links -->
-
-                <!-- <p class="mb-1">
-                    <a href="#">I forgot my password</a>
-                </p> -->
-
+                    <!-- /.col -->
             </div>
-            <!-- /.login-card-body -->
+            </form>
         </div>
+        <!-- /.login-card-body -->
     </div>
-    <!-- /.login-box -->
+
 
     <!-- jQuery -->
     <script src="/adminlte/plugins/jquery/jquery.min.js"></script>

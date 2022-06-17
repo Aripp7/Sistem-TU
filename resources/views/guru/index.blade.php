@@ -9,10 +9,8 @@
         </div>
         <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                <a href="add">
-                    <button type="button" class="btn btn-primary">Tambah Data Guru</button>
-
-                </a>
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item active">Guru</li>
             </ol>
         </div>
     </div>
@@ -24,10 +22,14 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Data Guru</h3>
+                            <ol class="breadcrumb float-sm-left">
+                                <a href="addGuru" class="btn btn-primary">
+                                    <i class="fa fa-plus"></i>
+                                    Tambah Data
+                                </a>
+                            </ol>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -58,13 +60,17 @@
                                         <td>{{ $values->kecamatan }}</td>
                                         <td>{{ $values->pangkat_golongan }}</td>
 
-                                        <td><a href="{{url('tendik',$values->id.'/edit')}}" class="btn btn-info" style="margin-bottom: 5px;">Update</a>
+                                        <td class="text-center" style="display: flex;">
+                                            <a href="{{url('guru',$values->id.'/edit')}}">
+                                                <button class="btn btn-success btn-xs shadow">
+                                                    <span class="fas fa-edit"></span>
+                                                </button>
+                                            </a>
+                                            <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('guru',$values->id)}}" method="POST">
 
-
-                                            <form action="{{url('tendik',$values->id)}}" method="POST">
                                                 @csrf
                                                 <input type="hidden" name="_method" value="delete">
-                                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
 
                                             </form>
                                         </td>
