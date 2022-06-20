@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Guru;
+
 use App\Models\Siswa;
 use Illuminate\Http\Request;
 
@@ -16,8 +16,11 @@ class SiswaController extends Controller
     public function index()
     {
         $datas = Siswa::all();
+
+
         return view('siswa.index', compact('datas'));
     }
+
 
     /**
      * Show the form for creating a new resource.

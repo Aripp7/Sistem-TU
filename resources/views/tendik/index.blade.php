@@ -35,7 +35,8 @@
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
                                     <thead>
-                                        <tr>
+                                        <tr style="background-color: #0069d9; color: white; size: 8px">
+                                            <!-- <th>No </th> -->
                                             <th>Nip </th>
                                             <th>Nama</th>
                                             <th>Tempat Lahir</th>
@@ -49,9 +50,13 @@
                                         </tr>
                                     </thead>
 
+                                    <?php $no = 0; ?>
                                     <tbody>
+
                                         @foreach($datas as $key=>$values)
+                                        <?php $no++; ?>
                                         <tr>
+                                            <!-- <td>{{ $no }}</td> -->
 
                                             <td>{{ $values->nip }}</td>
                                             <td>{{ $values->nama }}</td>
@@ -79,14 +84,7 @@
 
                                         </tr>
                                         @endforeach
-
                                     </tbody>
-
-                                    <tfoot>
-                                        <tr>
-
-                                        </tr>
-                                    </tfoot>
                                 </table>
                             </div>
                             <!-- /.card-body -->
@@ -101,23 +99,10 @@
         </section>
         <!-- /.content -->
 </div>
-<!-- /.content-wrapper -->
-
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-</div>
-<!-- ./wrapper -->
+< </body>
 
 
 
 
-</body>
-
-
-
-
-@endsection
-@section('content')
+    @endsection
+    @section('content')

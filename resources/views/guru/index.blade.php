@@ -35,7 +35,7 @@
                         <div class="card-body">
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
-                                    <tr>
+                                    <tr style="background-color: #0069d9; color: white; size: 8px">
                                         <th>Nip</th>
                                         <th>Nama Guru</th>
                                         <th>Jenis Kelamin</th>

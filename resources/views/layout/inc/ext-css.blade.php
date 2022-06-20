@@ -28,3 +28,5 @@
     <link rel="stylesheet" href="{{ url ('/adminlte/plugins/bs-stepper/css/bs-stepper.min.css')}}">
     <!-- dropzonejs -->
     <link rel="stylesheet" href="{{ url ('/adminlte/plugins/dropzone/min/dropzone.min.css')}}">
+    <link rel="stylesheet" href="{{url('/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
+    <link rel="stylesheet" href="{{ url('/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">

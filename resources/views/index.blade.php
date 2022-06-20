@@ -18,14 +18,14 @@
     <meta property="fb:app_id" content="145000412781544" />
     <meta property="og:title" content="SMAN 1 KECAMATAN GUGUAK" />
     <meta property="og:description" content="Website Resmi SMAN 1 Kecamatan Guguak" />
-    <meta property="og:image" content="1upload/picture/32996476MinimalistBlueRAMADHANMubarokFacebookCover.png" />
+    <meta property="og:image" content="https://www.sman1guguak.sch.id/upload/picture/32996476MinimalistBlueRAMADHANMubarokFacebookCover.png" />
     <meta property="og:image:width" content="600" />
     <meta property="og:image:height" content="600" />
     <meta property="og:image:alt" content="SMAN 1 KECAMATAN GUGUAK" />
     <meta property="og:type" content="article" />
-    <meta property="og:url" content="1" />
+    <meta property="og:url" content="https://www.sman1guguak.sch.id/" />
 
-    <link rel="icon" href="1upload/imagecache/28018056iconnn-32x32.png" type="image/x-icon" sizes="any" />
+    <link rel="icon" href="https://www.sman1guguak.sch.id/upload/imagecache/28018056iconnn-32x32.png" type="image/x-icon" sizes="any" />
     <link rel="stylesheet" href="https://myschid.com/cms_baru/theme/academy/style.css">
     <link rel="stylesheet" href="https://storage.googleapis.com/s2.mysch.id/themes/academy/default/style.css">
     <link rel="stylesheet" href="https://storage.googleapis.com/s2.mysch.id/themes/academy/default/font-awesome.min.css">
@@ -104,12 +104,12 @@
                     <b style="float:left;">NEWS UPDATE : &nbsp; </b>
                     <ul id="listticker">
 
-                        <li><a href="1berita/detail/423349//" title="Ramadhan dan Keistimewaannya">Ramadhan dan Keistimewaannya...</a></li>
-                        <li><a href="1berita/detail/423348//" title="Menghafal Vs Memahami, Mana Cara Belajar Paling Tepat ?">Menghafal Vs Memahami, Mana Cara Belajar Paling Tepat ?...</a></li>
-                        <li><a href="1berita/detail/423169/keikutsertaan-siswa-sma-n-1-guguak-pada-kegiatan-ramadhan-1443-h-/" title="KEIKUTSERTAAN SISWA SMA N 1 GUGUAK PADA KEGIATAN RAMADHAN 14">KEIKUTSERTAAN SISWA SMA N 1 GUGUAK PADA KEGIATAN RAMADHAN 14...</a></li>
-                        <li><a href="1berita/detail/154635/pengumuman-ppdb-yang-diterima-tahap-ke-ii/" title="PENGUMUMAN PPDB YANG DITERIMA TAHAP KE II">PENGUMUMAN PPDB YANG DITERIMA TAHAP KE II...</a></li>
-                        <li><a href="1berita/detail/152500/ppdb-2021/" title="PPDB 2021">PPDB 2021...</a></li>
-                        <li><a href="1berita/detail/133905/pentingnya-" membaca"/" title="Pentingnya " Membaca"">Pentingnya "Membaca"...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/423349//" title="Ramadhan dan Keistimewaannya">Ramadhan dan Keistimewaannya...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/423348//" title="Menghafal Vs Memahami, Mana Cara Belajar Paling Tepat ?">Menghafal Vs Memahami, Mana Cara Belajar Paling Tepat ?...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/423169/keikutsertaan-siswa-sma-n-1-guguak-pada-kegiatan-ramadhan-1443-h-/" title="KEIKUTSERTAAN SISWA SMA N 1 GUGUAK PADA KEGIATAN RAMADHAN 14">KEIKUTSERTAAN SISWA SMA N 1 GUGUAK PADA KEGIATAN RAMADHAN 14...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/154635/pengumuman-ppdb-yang-diterima-tahap-ke-ii/" title="PENGUMUMAN PPDB YANG DITERIMA TAHAP KE II">PENGUMUMAN PPDB YANG DITERIMA TAHAP KE II...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/152500/ppdb-2021/" title="PPDB 2021">PPDB 2021...</a></li>
+                        <li><a href="https://www.sman1guguak.sch.id/berita/detail/133905/pentingnya-" membaca"/" title="Pentingnya " Membaca"">Pentingnya "Membaca"...</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 top-right">
@@ -166,8 +166,8 @@
                 <div class="header-content align-items-center justify-content-between">
                     <div class="row">
                         <div class="col-md-8">
-                            <a href="1" title="SMAN 1 KECAMATAN GUGUAK">
-                                <img src="1upload/imagecache/85206253icon-99x100.png" alt="SMAN 1 KECAMATAN GUGUAK" align="left" width="80" style="margin:-5px 10px 0 0" />
+                            <a href="https://www.sman1guguak.sch.id/" title="SMAN 1 KECAMATAN GUGUAK">
+                                <img src="https://www.sman1guguak.sch.id/upload/imagecache/85206253icon-99x100.png" alt="SMAN 1 KECAMATAN GUGUAK" align="left" width="80" style="margin:-5px 10px 0 0" />
                                 <b style="font-size:28px;margin-top:20px;font-weight:400;text-transform:uppercase;">SMAN 1 KECAMATAN GUGUAK</b><br /> <span style="font-size:16px;font-weight:400;">Kabupaten Lima Puluh Kota Provinsi Sumatera Barat</span>
                             </a>
                         </div>
@@ -191,98 +191,98 @@
                             </div>
                             <div class="classynav">
                                 <ul>
-                                    <li><a href="1">Home</a>
+                                    <li><a href="https://www.sman1guguak.sch.id/">Home</a>
                                         <ul class="dropdown">
-                                            <li><a href="1"></a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/"></a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="1profil">Profil</a>
+                                    <li><a href="https://www.sman1guguak.sch.id/profil">Profil</a>
                                         <ul class="dropdown">
-                                            <li><a href="1sejarah">Sejarah</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/sejarah">Sejarah</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="1"></a></li>
-                                    <li><a href="1kesiswaan">Kesiswaan</a>
+                                    <li><a href="https://www.sman1guguak.sch.id/"></a></li>
+                                    <li><a href="https://www.sman1guguak.sch.id/kesiswaan">Kesiswaan</a>
                                         <ul class="dropdown">
-                                            <li><a href="1beasiswa">Beasiswa</a></li>
-                                            <li><a href="1e-rapor">E-Rapor</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/beasiswa">Beasiswa</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/e-rapor">E-Rapor</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="1laporan">Laporan</a></li>
-                                    <li><a href="1ppid">PPID</a>
+                                    <li><a href="https://www.sman1guguak.sch.id/laporan">Laporan</a></li>
+                                    <li><a href="https://www.sman1guguak.sch.id/ppid">PPID</a>
                                         <ul class="dropdown">
-                                            <li><a href="1profil-singkat-ppid">PROFIL SINGKAT PPID</a></li>
-                                            <li><a href="1sk-ppid">SK PPID</a></li>
-                                            <li><a href="1maklumat-ppid">MAKLUMAT PPID</a></li>
-                                            <li><a href="1tugas-dan-fungsi">TUGAS DAN FUNGSI</a></li>
-                                            <li><a href="1struktur-ppid">STRUKTUR PPID</a></li>
-                                            <li><a href="1visi-dan-misi">VISI DAN MISI</a></li>
-                                            <li><a href="1jadwal-pelayanan-ppid">Jadwal pelayanan PPID</a></li>
-                                            <li><a href="1informasi-ppid">INFORMASI PPID</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/profil-singkat-ppid">PROFIL SINGKAT PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/sk-ppid">SK PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/maklumat-ppid">MAKLUMAT PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/tugas-dan-fungsi">TUGAS DAN FUNGSI</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/struktur-ppid">STRUKTUR PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/visi-dan-misi">VISI DAN MISI</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/jadwal-pelayanan-ppid">Jadwal pelayanan PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/informasi-ppid">INFORMASI PPID</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1tata-cara-permohonan-informasi">Tata Cara Permohonan Informasi</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1tata-cara-pengajuan-keberatan">Tata Cara Pengajuan Keberatan</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1tata-cara-pengajuan-permohonan-penyelesaian-sengketa-ke-komisi-informasi">Tata Cara Pengajuan Permohonan Penyelesaian Sengketa ke Komisi Informasi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/tata-cara-permohonan-informasi">Tata Cara Permohonan Informasi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/tata-cara-pengajuan-keberatan">Tata Cara Pengajuan Keberatan</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/tata-cara-pengajuan-permohonan-penyelesaian-sengketa-ke-komisi-informasi">Tata Cara Pengajuan Permohonan Penyelesaian Sengketa ke Komisi Informasi</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1keuangan-dan-inventaris">Keuangan dan Inventaris</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/keuangan-dan-inventaris">Keuangan dan Inventaris</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1lapkeuanganaudited">Lap.Keuangan(Audited)</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1rka">RKA</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/lapkeuanganaudited">Lap.Keuangan(Audited)</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/rka">RKA</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1regulasi">REGULASI</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/regulasi">REGULASI</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1uu-komisi-informasi">UU KOMISI INFORMASI</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1surat-edaran-komisi-informasi">SURAT EDARAN KOMISI INFORMASI</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/uu-komisi-informasi">UU KOMISI INFORMASI</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/surat-edaran-komisi-informasi">SURAT EDARAN KOMISI INFORMASI</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1sop-ppid">SOP PPID</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/sop-ppid">SOP PPID</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1sop-pengelolaan-permohonan-informasi">SOP Pengelolaan Permohonan Informasi</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1sop-pengelolaan-keberatan-atas-informasi">SOP Pengelolaan Keberatan atas Informasi</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1sop-ppid-sman-1-kecamatan-guguak">SOP PPID SMAN 1 KECAMATAN GUGUAK</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1sop-penanganan-sengketa-informasi-publik">SOP Penanganan Sengketa Informasi Publik</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1penetapan-dan-pemutakhiran-dip">Penetapan dan Pemutakhiran DIP</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1pengujian-tentang-konsekuensi">Pengujian tentang Konsekuensi</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1pendokumentasian-informasi-publik">Pendokumentasian Informasi Publik</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1sop-layanan-publik-yang-dikecualikan">SOP Layanan Publik yang Dikecualikan</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/sop-pengelolaan-permohonan-informasi">SOP Pengelolaan Permohonan Informasi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/sop-pengelolaan-keberatan-atas-informasi">SOP Pengelolaan Keberatan atas Informasi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/sop-ppid-sman-1-kecamatan-guguak">SOP PPID SMAN 1 KECAMATAN GUGUAK</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/sop-penanganan-sengketa-informasi-publik">SOP Penanganan Sengketa Informasi Publik</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/penetapan-dan-pemutakhiran-dip">Penetapan dan Pemutakhiran DIP</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/pengujian-tentang-konsekuensi">Pengujian tentang Konsekuensi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/pendokumentasian-informasi-publik">Pendokumentasian Informasi Publik</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/sop-layanan-publik-yang-dikecualikan">SOP Layanan Publik yang Dikecualikan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1jenis-jenis-informasi-publik">Jenis-jenis Informasi Publik</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/jenis-jenis-informasi-publik">Jenis-jenis Informasi Publik</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1informasi-yang-terbuka">Informasi yang Terbuka</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1informasi-yang-dikecualikan">Informasi yang dikecualikan</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/informasi-yang-terbuka">Informasi yang Terbuka</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/informasi-yang-dikecualikan">Informasi yang dikecualikan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1pelayanan-online">Pelayanan Online</a></li>
-                                            <li><a href="1informasi-yang-dikecualikan">Informasi yang dikecualikan</a></li>
-                                            <li><a href="1data-yang-dimutakhirkan">Data yang dimutakhirkan</a></li>
-                                            <li><a href="1laporan-ppid">LAPORAN PPID</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/pelayanan-online">Pelayanan Online</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/informasi-yang-dikecualikan">Informasi yang dikecualikan</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/data-yang-dimutakhirkan">Data yang dimutakhirkan</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/laporan-ppid">LAPORAN PPID</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1laporantahun">Laporan/Tahun</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1permohonan-publik-yg-diterima">Permohonan publik yg diterima</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1permohonan-yg-ditolak">Permohonan yg ditolak</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1data-permohonan-info-publik">Data permohonan info publik</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/laporantahun">Laporan/Tahun</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/permohonan-publik-yg-diterima">Permohonan publik yg diterima</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/permohonan-yg-ditolak">Permohonan yg ditolak</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/data-permohonan-info-publik">Data permohonan info publik</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1pelayanan-informasi-publik">Pelayanan Informasi Publik</a>
+                                            <li><a href="https://www.sman1guguak.sch.id/pelayanan-informasi-publik">Pelayanan Informasi Publik</a>
                                                 <ul class="dropdown">
-                                                    <li class="nav-item"><a class="nav-link" href="1form-permohonan-informasi">Form Permohonan Informasi</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1form-keberatan-ppid">Form Keberatan PPID</a></li>
-                                                    <li class="nav-item"><a class="nav-link" href="1daftar-register-permohonan">Daftar Register Permohonan</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/form-permohonan-informasi">Form Permohonan Informasi</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/form-keberatan-ppid">Form Keberatan PPID</a></li>
+                                                    <li class="nav-item"><a class="nav-link" href="https://www.sman1guguak.sch.id/daftar-register-permohonan">Daftar Register Permohonan</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="1fasilitas-ruang-ppid">Fasilitas Ruang PPID</a></li>
-                                            <li><a href="1info-dan-evakuasi-bencana">Info dan Evakuasi bencana</a></li>
-                                            <li><a href="1standar-biaya-ppid">Standar Biaya PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/fasilitas-ruang-ppid">Fasilitas Ruang PPID</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/info-dan-evakuasi-bencana">Info dan Evakuasi bencana</a></li>
+                                            <li><a href="https://www.sman1guguak.sch.id/standar-biaya-ppid">Standar Biaya PPID</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="1berita">Berita</a></li>
-                                    <li><a href="1artikel">Artikel</a></li>
+                                    <li><a href="https://www.sman1guguak.sch.id/berita">Berita</a></li>
 
-                                    <li><a href="1perpustakaan">Perpustakaan</a></li>
-                                    <li><a href="adminTU">Adminstrasi TU</a></li>
+                                    <li><a href="https://www.sman1guguak.sch.id/galeri">Galeri</a></li>
+                                    <li><a href="https://www.sman1guguak.sch.id/perpustakaan">Perpustakaan</a></li>
+                                    <li><a href="adminLogin">Admin</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -298,7 +298,7 @@
     </header>
     <section class="hero-area js-doc-top-el">
         <div class="hero-slides owl-carousel">
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/910265720img6690---copy.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/910265720img6690---copy.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -310,7 +310,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/17365499371-10.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/17365499371-10.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -322,7 +322,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/1851983921-5.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/1851983921-5.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -334,7 +334,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/20816313451-8.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/20816313451-8.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -346,7 +346,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/20294914421-1.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/20294914421-1.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -358,7 +358,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/3766119601.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/3766119601.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -370,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/12201901692.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/12201901692.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -382,7 +382,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/1496320023.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/1496320023.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -394,7 +394,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/2251675644.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/2251675644.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -406,7 +406,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/17519869225.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/17519869225.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -418,7 +418,7 @@
                     </div>
                 </div>
             </div>
-            <div class="single-hero-slide bg-img" style="background-image: url('1upload/picture/82107515img6445-copy.jpg');">
+            <div class="single-hero-slide bg-img" style="background-image: url('https://www.sman1guguak.sch.id/upload/picture/82107515img6445-copy.jpg');">
                 <div class="container h-100">
                     <div class="row h-100 align-items-center">
                         <div class="col-12">
@@ -441,7 +441,7 @@
                             <div class="widget_title">KEPALA SEKOLAH</div>
                             <div class="widget_body">
                                 <a href="" title="KEPALA SEKOLAH">
-                                    <img width="100%" src="1upload/imagecache/6024153655218979muh-300x412-400x549.jpg" alt="KEPALA SEKOLAH" />
+                                    <img width="100%" src="https://www.sman1guguak.sch.id/upload/imagecache/6024153655218979muh-300x412-400x549.jpg" alt="KEPALA SEKOLAH" />
                                 </a>
                             </div>
                         </div>
@@ -540,7 +540,7 @@
                             <div class="widget_title">PENGUMUMAN KELULUSAN KELAS XII TP 2021/2022</div>
                             <div class="widget_body">
                                 <a href="/simpen" title="PENGUMUMAN KELULUSAN TAHUN PELAJARAN 2021/2022">
-                                    <img width="100%" src="1upload/imagecache/937111Pengumuman-Lulus-400x221.jpeg" alt="PENGUMUMAN KELULUSAN TAHUN PELAJARAN 2021/2022" />
+                                    <img width="100%" src="https://www.sman1guguak.sch.id/upload/imagecache/937111Pengumuman-Lulus-400x221.jpeg" alt="PENGUMUMAN KELULUSAN TAHUN PELAJARAN 2021/2022" />
                                 </a>
                             </div>
                         </div>
