@@ -25,7 +25,6 @@
 
             <div class="row">
                 <div class="col-12">
-
                     <div class="card">
                         <ol class="breadcrumb float-sm-left" style="margin-left: 20px; margin-top: 10px;">
                             <a href="addSiswa" class="btn btn-primary">
@@ -33,41 +32,45 @@
                                 Tambah Data Siswa
                             </a>
                         </ol>
-                        <td>
-                            <!-- /.card-header -->
-                            <div class="card-body">
-                                <table id="example1" class="table table-bordered table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th>NISN </th>
-                                            <th>Nama</th>
-                                            <th>Tempat Lahir</th>
-                                            <th>Tanggal Lahir</th>
-                                            <th>Agama</th>
-                                            <th>Alamat</th>
-                                            <th>Nama Ayah</th>
-                                            <th>Nama Ibu</th>
 
-                                            <th>Aksi</th>
+                        <!-- /.card-header -->
+                        <div class="card-body">
+                            <table id="example1" class="table table-bordered table-striped">
+                                <thead>
+                                    <tr style="background-color: #0069d9; color: white; size: 8px">
+                                        <!-- <th>No </th> -->
+                                        <th>NISN </th>
+                                        <th>Nama</th>
+                                        <th>Tempat Lahir</th>
+                                        <th>Tanggal Lahir</th>
+                                        <th>Agama</th>
+                                        <th>Alamat</th>
+                                        <th>Nama Ayah</th>
+                                        <th>Nama Ibu</th>
+                                        <th>Aksi</th>
 
-                                        </tr>
-                                    </thead>
+                                    </tr>
+                                </thead>
 
-                                    <tbody>
-                                        @foreach($datas as $key=>$values)
-                                        <tr>
+                                <?php $no = 0; ?>
+                                <tbody>
 
-                                            <td>{{ $values->nisn }}</td>
-                                            <td>{{ $values->nama }}</td>
-                                            <td>{{ $values->tempat_lahir }}</td>
-                                            <td>{{ $values->tgl_lahir }}</td>
-                                            <td>{{ $values->agama }}</td>
-                                            <td>{{ $values->alamat}}</td>
-                                            <td>{{ $values->nama_ayah }}</td>
-                                            <td>{{ $values->nama_ibu }}</td>
+                                    @foreach($datas as $key=>$values)
+                                    <?php $no++; ?>
+                                    <tr>
+                                        <!-- <td>{{ $no }}</td> -->
+
+                                        <td>{{ $values->nisn }}</td>
+                                        <td>{{ $values->nama }}</td>
+                                        <td>{{ $values->tempat_lahir }}</td>
+                                        <td>{{ $values->tgl_lahir }}</td>
+                                        <td>{{ $values->agama }}</td>
+                                        <td>{{ $values->alamat}}</td>
+                                        <td>{{ $values->nama_ayah }}</td>
+                                        <td>{{ $values->nama_ibu }}</td>
 
 
-                                            <!-- <td style="display: flex;">
+                                        <!-- <td style="display: flex;">
                                                 <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
                                                     <button class="btn btn-success btn-xs shadow">
                                                         <span class="fas fa-edit"></span>
@@ -83,25 +86,25 @@
 
                                                 </form>
                                             </td> -->
-                                            <td class="text-center">
-                                                <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
-                                                    <button class="btn btn-success btn-xs shadow">
-                                                        <span class="fas fa-edit"></span>
-                                                    </button>
-                                                </a>
-                                                <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}" method="POST">
+                                        <td class="text-center">
+                                            <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
+                                                <button class="btn btn-success btn-xs shadow">
+                                                    <span class="fas fa-edit"></span>
+                                                </button>
+                                            </a>
+                                            <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}" method="POST">
 
-                                                    @csrf
-                                                    <input type="hidden" name="_method" value="delete">
+                                                @csrf
+                                                <input type="hidden" name="_method" value="delete">
 
-                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
-                                                </form>
-                                            </td>
-                                        </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
-                            </div>
+                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
+                                            </form>
+                                        </td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
