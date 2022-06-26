@@ -67,18 +67,15 @@
                                             <td>{{ $values->alamat_jalan }}</td>
                                             <td>{{ $values->pangkat_golongan }}</td>
 
-                                            <td class="text-center">
-                                                <a href="{{url('tendik',$values->id.'/edit')}}">
-                                                    <button class="btn btn-success btn-xs shadow">
-                                                        <span class="fas fa-edit"></span>
-                                                    </button>
-                                                </a>
-                                                <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('tendik',$values->id)}}" method="POST">
-
+                                            <td>
+                                                <form action="{{ route('tendik.destroy', $values->id) }}" method="post">
                                                     @csrf
-                                                    <input type="hidden" name="_method" value="delete">
+                                                    @method('DELETE')
+                                                    <a href="{{ route('tendik.edit', $values->id) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a>
 
-                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
+                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow" onclick="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('tendik',$values->id)}}"> <span class="fas fa-trash"></span>
+
+                                                    </button>
                                                 </form>
                                             </td>
 

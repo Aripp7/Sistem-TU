@@ -58,8 +58,6 @@
                                     @foreach($datas as $key=>$values)
                                     <?php $no++; ?>
                                     <tr>
-                                        <!-- <td>{{ $no }}</td> -->
-
                                         <td>{{ $values->nisn }}</td>
                                         <td>{{ $values->nama }}</td>
                                         <td>{{ $values->tempat_lahir }}</td>
@@ -68,36 +66,16 @@
                                         <td>{{ $values->alamat}}</td>
                                         <td>{{ $values->nama_ayah }}</td>
                                         <td>{{ $values->nama_ibu }}</td>
-
-
-                                        <!-- <td style="display: flex;">
-                                                <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
-                                                    <button class="btn btn-success btn-xs shadow">
-                                                        <span class="fas fa-edit"></span>
-                                                    </button>
-                                                </a>
-
-                                                <form action="{{url('siswa',$values->id)}}" method="POST" data-toggle="modal" data-target="#deleteCategory">
-                                                    @csrf
-                                                    <input type="hidden" name="_method" value="delete">
-                                                    <button type="submit" class="btn btn-danger btn-xs shadow">
-                                                        <span class="fas fa-trash"></span>
-                                                    </button>
-
-                                                </form>
-                                            </td> -->
-                                        <td class="text-center">
-                                            <a href="{{url('siswa',$values->id.'/edit')}}" style="margin-bottom: 5px;">
-                                                <button class="btn btn-success btn-xs shadow">
-                                                    <span class="fas fa-edit"></span>
-                                                </button>
-                                            </a>
-                                            <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}" method="POST">
-
+                                        <td>
+                                            <form action="{{ route('siswa.destroy', $values->id) }}" method="post">
                                                 @csrf
-                                                <input type="hidden" name="_method" value="delete">
+                                                @method('DELETE')
+                                                <!-- <a href="{{ route('siswa.show', $values->id) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a> -->
+                                                <a href="{{ route('siswa.edit', $values->id) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a>
 
-                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
+                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow" onclick="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}"> <span class="fas fa-trash"></span>
+
+                                                </button>
                                             </form>
                                         </td>
                                     </tr>

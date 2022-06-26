@@ -221,8 +221,6 @@
                         </li>
                     </ul>
                 </li>
-
-
                 <li class="nav-item">
                     <a href="../gallery.html" class="nav-link">
                         <i class="nav-icon far fa-image"></i>
@@ -239,8 +237,14 @@
                         </p>
                     </a>
                 </li>
-
-
+                <li class="nav-item">
+                    <a href="admin" class="nav-link">
+                        <i class="nav-icon fas fa-columns"></i>
+                        <p>
+                            Admin
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

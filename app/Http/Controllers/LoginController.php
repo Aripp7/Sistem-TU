@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-
     public function halamanLogin()
     {
         return view('login.login');
@@ -25,7 +24,6 @@ class LoginController extends Controller
             $request->session()->regenerate();
             return redirect()->intended('dashboard');
         }
-
         return back()->with('loginError', 'Login failed');
     }
     public function logout()

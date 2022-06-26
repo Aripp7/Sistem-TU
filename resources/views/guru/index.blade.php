@@ -60,27 +60,20 @@
                                         <td>{{ $values->kecamatan }}</td>
                                         <td>{{ $values->pangkat_golongan }}</td>
 
-                                        <td class="text-center" style="display: flex;">
-                                            <a href="{{url('guru',$values->id.'/edit')}}">
-                                                <button class="btn btn-success btn-xs shadow">
-                                                    <span class="fas fa-edit"></span>
-                                                </button>
-                                            </a>
-                                            <form onsubmit="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('guru',$values->id)}}" method="POST">
-
+                                        <td>
+                                            <form action="{{ route('guru.destroy', $values->id) }}" method="post">
                                                 @csrf
-                                                <input type="hidden" name="_method" value="delete">
-                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"></span></button>
+                                                @method('DELETE')
+                                                <a href="{{ route('guru.edit', $values->id) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a>
 
+                                                <button type="submit" class="btn btn-sm btn-danger btn-xs shadow" onclick="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('guru',$values->id)}}"> <span class="fas fa-trash"></span>
+
+                                                </button>
                                             </form>
                                         </td>
                                     </tr>
                                     @endforeach
                                 </tbody>
-
-
-
-
                             </table>
                         </div>
                         <!-- /.card-body -->

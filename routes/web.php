@@ -25,9 +25,10 @@ Route::resource('guru', GuruController::class);
 Route::get('/addGuru', [GuruController::class, 'create'])->name('tambah-guru');
 
 Route::resource('siswa', SiswaController::class);
-// Route::post('/simpan-siswa', [SiswaController::class, 'store'])->name('simpan-siswa');
+Route::post('/simpan-siswa', [SiswaController::class, 'store'])->name('simpan-siswa');
 // Route::get('/siswa', [SiswaController::class, 'index'])->name('data-siswa');
 Route::get('/addSiswa', [SiswaController::class, 'create'])->name('tambah-siswa');
+Route::put('/postSiswa', [SiswaController::class, 'store']);
 
 Route::resource('tendik', TendikController::class);
 // Route::post('/simpan-tendik', [TendikController::class, 'store'])->name('simpan-tendik');
@@ -36,7 +37,9 @@ Route::get('/addTendik', [TendikController::class, 'create'])->name('tambah-tend
 Route::resource('dashboard', DashboardController::class);
 
 Route::resource('tahun', TahunController::class);
-Route::get('/addtahun', [TahunController::class, 'create']);
+Route::get('/addtahun', [TahunController::class, 'create'])->name('tambah-tahun');
+Route::put('/postTahun', [TahunController::class, 'store']);
+
 
 Route::get('/adminLogin', [LoginController::class, 'halamanLogin'])->name('login')->middleware('guest');
 Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('postLogin');

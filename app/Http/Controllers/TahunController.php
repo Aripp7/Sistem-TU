@@ -37,6 +37,13 @@ class TahunController extends Controller
      */
     public function store(Request $request)
     {
+        // return $request;
+
+        $request->validate([
+            'tahun' => 'required',
+            'status' => 'required',
+        ]);
+
         $model = new Tahun();
         $model->tahun = $request->tahun;
         $model->status = $request->status;
@@ -45,8 +52,9 @@ class TahunController extends Controller
 
 
 
-        return redirect('Tahun');
+        return redirect('tahun');
     }
+
 
     /**
      * Display the specified resource.
@@ -65,9 +73,9 @@ class TahunController extends Controller
      * @param  \App\Models\Tahun  $Tahun
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id_tahun)
     {
-        $model =  Tahun::find($id);
+        $model =  Tahun::find($id_tahun);
         return view('Tahun.edit', compact('model'));
     }
 
@@ -78,9 +86,9 @@ class TahunController extends Controller
      * @param  \App\Models\Tahun  $Tahun
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,  $id)
+    public function update(Request $request,  $id_tahun)
     {
-        $model =  Tahun::find($id);
+        $model =  Tahun::find($id_tahun);
         $model->tahun = $request->tahun;
         $model->status = $request->status;
 

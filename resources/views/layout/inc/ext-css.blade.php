@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{ url('/adminlte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{ url('/adminlte/plugins/datatables-responsive/css/responsive.bootstrap4.min.css')}}">
     <link rel="stylesheet" href="{{ url('/adminlte/plugins/datatables-buttons/css/buttons.bootstrap4.min.css')}}">
-
     <link rel="stylesheet" href="{{ url('/adminlte/dist/css/sweetalert2.min.css') }}">
 
     <link rel="stylesheet" href="{{ url ('/adminlte/plugins/daterangepicker/daterangepicker.css')}}">
@@ -30,3 +29,7 @@
     <link rel="stylesheet" href="{{ url ('/adminlte/plugins/dropzone/min/dropzone.min.css')}}">
     <link rel="stylesheet" href="{{url('/adminlte/plugins/overlayScrollbars/css/OverlayScrollbars.min.css')}}">
     <link rel="stylesheet" href="{{ url('/adminlte/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css')}}">
+
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->

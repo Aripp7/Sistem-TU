@@ -18,19 +18,7 @@
 
 <body class="hold-transition login-page" style="background-image: url('adminlte/dist/img/latar sma.jpg'); background-size: cover; width:auto;">
 
-    <!-- @if(session()->has('success'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        {{session('success')}}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
-    </div>
-    @endif
 
-    @if(session()->has('loginErorr'))
-    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-        {{session('loginErorr')}}
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
-    </div>
-    @endif -->
 
 
     <div class="login-box ">

@@ -41,15 +41,26 @@ class SiswaController extends Controller
      */
     public function store(Request $request)
     {
+
+
         $model = new Siswa();
+        $model->nisn = $request->nisn;
         $model->nama = $request->nama;
+        $model->tgl_lahir = $request->tgl_lahir;
+        $model->tempat_lahir = $request->tempat_lahir;
+        $model->agama = $request->agama;
+        $model->nama_ayah = $request->nama_ayah;
+        $model->nama_ibu = $request->nama_ibu;
         $model->alamat = $request->alamat;
-        $model->nohp = $request->nohp;
+        $model->jenis_kelamin = $request->jenis_kelamin;
+        $model->kelas = $request->kelas;
+
+
         $model->save();
 
 
 
-        return redirect('siswa');
+        return redirect()->route('siswa.index')->with('succes', 'Data Berhasil di Input');
     }
 
     /**
@@ -60,7 +71,8 @@ class SiswaController extends Controller
      */
     public function show($id)
     {
-        //
+        $model =  Siswa::find($id);
+        return view('siswa.show', compact('model'));
     }
 
     /**
@@ -84,10 +96,18 @@ class SiswaController extends Controller
      */
     public function update(Request $request, $id)
     {
+
         $model =  Siswa::find($id);
+        $model->nisn = $request->nisn;
         $model->nama = $request->nama;
+        $model->tgl_lahir = $request->tgl_lahir;
+        $model->tempat_lahir = $request->tempat_lahir;
+        $model->agama = $request->agama;
+        $model->nama_ayah = $request->nama_ayah;
+        $model->nama_ibu = $request->nama_ibu;
         $model->alamat = $request->alamat;
-        $model->nohp = $request->nohp;
+        $model->jenis_kelamin = $request->jenis_kelamin;
+        $model->kelas = $request->kelas;
         $model->update();
 
 

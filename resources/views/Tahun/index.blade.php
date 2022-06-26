@@ -49,16 +49,15 @@
                                             <td>{{ $no }}</td>
                                             <td>{{ $values->tahun }}</td>
                                             <td style="justify-content: center;"><span class="{{ ($values->status == 'Aktif') ? ' badge badge-success' : ' badge badge-danger' }}">{{ $values->status }}</span></td>
-                                            <td class="text-center">
-                                                <a href="{{url('tahun',$values->id.'/edit')}}" style="margin-bottom: 5px;">
-                                                    <button class="btn btn-primary btn-xs  shadow">
-                                                        <span class="fas fa-edit"></span>
-                                                    </button>
-                                                </a>
-                                                <form onsubmit="return confirm('Yakin Ingin Menghapus tahun ajaran {{ $values->tahun }} ? ');" action="{{url('tahun',$values->id)}}" method="POST">
+                                            <td>
+                                                <form action="{{ route('tahun.destroy', $values->id_tahun) }}" method="post">
                                                     @csrf
-                                                    <input type="hidden" name="_method" value="delete">
-                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow"> <span class="fas fa-trash"> </span></button>
+                                                    @method('DELETE')
+                                                    <a href="{{ route('tahun.edit', $values->id_tahun) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a>
+
+                                                    <button type="submit" class="btn btn-sm btn-danger btn-xs shadow" onclick="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}"> <span class="fas fa-trash"></span>
+
+                                                    </button>
                                                 </form>
                                             </td>
                                         </tr>
@@ -66,6 +65,7 @@
                                     </tbody>
                                 </table>
                             </div>
+                        </td>
                     </div>
                 </div>
             </div>
