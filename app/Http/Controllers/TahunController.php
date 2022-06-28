@@ -109,8 +109,6 @@ class TahunController extends Controller
     {
         $model =  Tahun::find($id);
         $model->delete();
-
-
         return redirect('tahun');
     }
 }
