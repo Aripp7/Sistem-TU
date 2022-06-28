@@ -26,10 +26,22 @@
             <div class="card-body login-card-body">
                 <p class="login-box-msg"><b>Selamat Datang Administrator</b></p>
 
-                <form action="{{ route('postLogin') }}" method="POST">
+                <form action="postLogin" method="POST">
+                    @if(session()->has('success'))
+                    <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        {{session('success')}}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                    @endif
+                    <!-- alert alert-danger d-flex align-items-center -->
+                    @if(session()->has('loginErorr'))
+                    <div style="margin-bottom: 10px; color:crimson; margin-left: 115px;" role="alert">
+                        {{session('loginErorr')}}
+                    </div>
+                    @endif
                     @csrf
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
                         <div class="input-group-append">
                             <div class="input-group-text">
                                 <span class="fas fa-envelope"></span>

@@ -45,7 +45,7 @@
 
                 <a href="#" class="btn btn-primary" data-dismiss="modal">Indak Jadi</a>
 
-                <a href="{{ route('logout') }}" class="btn btn-danger">Gass Logout</a>
+                <a href="logout" class="btn btn-danger">Gass Logout</a>
             </div>
         </div>
     </div>

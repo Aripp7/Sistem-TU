@@ -1,10 +1,12 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\SiswaController;
 use App\Http\Controllers\TendikController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\KelasController;
 use App\Http\Controllers\TahunController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,34 +21,66 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('guru', GuruController::class);
-// Route::post('/simpan-guru', [GuruController::class, 'store'])->name('simpan-guru');
-// Route::get('/guru', [GuruController::class, 'index'])->name('data-guru');
-Route::get('/addGuru', [GuruController::class, 'create'])->name('tambah-guru');
+Route::group(['middleware' => 'auth'], function () {
+    //dashboard
 
-Route::resource('siswa', SiswaController::class);
-Route::post('/simpan-siswa', [SiswaController::class, 'store'])->name('simpan-siswa');
-// Route::get('/siswa', [SiswaController::class, 'index'])->name('data-siswa');
-Route::get('/addSiswa', [SiswaController::class, 'create'])->name('tambah-siswa');
-Route::put('/postSiswa', [SiswaController::class, 'store']);
-
-Route::resource('tendik', TendikController::class);
-// Route::post('/simpan-tendik', [TendikController::class, 'store'])->name('simpan-tendik');
-// Route::get('/tendik', [TendikController::class, 'index'])->name('data-tendik');
-Route::get('/addTendik', [TendikController::class, 'create'])->name('tambah-tendik');
-Route::resource('dashboard', DashboardController::class);
-
-Route::resource('tahun', TahunController::class);
-Route::get('/addtahun', [TahunController::class, 'create'])->name('tambah-tahun');
-Route::put('/postTahun', [TahunController::class, 'store']);
-
-
-Route::get('/adminLogin', [LoginController::class, 'halamanLogin'])->name('login')->middleware('guest');
-Route::post('/postLogin', [LoginController::class, 'postLogin'])->name('postLogin');
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+});
 
 
 
 Route::get('/', function () {
     return view('index');
 });
+
+Route::resource('dashboard', DashboardController::class);
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+
+
+//guru
+Route::resource('guru', GuruController::class);
+Route::get('/addGuru', [GuruController::class, 'create']);
+Route::get('/editGuru', [GuruController::class, 'edit']);
+Route::put('/postGuru', [GuruController::class, 'store']);
+Route::put('/postUpdateGuru', [GuruController::class, 'update']);
+
+//Login
+Route::get('/adminLogin', [LoginController::class, 'halamanLogin'])->middleware('guest')->name('login');
+Route::post('/postLogin', [LoginController::class, 'postLogin']);
+Route::get('/logout', [LoginController::class, 'logout']);
+
+
+//siswa
+Route::resource('siswa', SiswaController::class);
+Route::get('/addSiswa', [SiswaController::class, 'create']);
+Route::put('/postSiswa', [SiswaController::class, 'store']);
+Route::get('/editSiswa', [SiswaController::class, 'edit']);
+Route::put('/postUpdateSiswa', [SiswaController::class, 'update']);
+
+//tendik
+Route::resource('tendik', TendikController::class);;
+Route::get('/addTendik', [TendikController::class, 'create']);
+Route::put('/postTendik', [TendikController::class, 'store']);
+Route::put('/postUpdateTendik', [TendikController::class, 'update']);
+Route::get('/editTendik', [TendikController::class, 'edit']);
+
+//tahun ajaran
+Route::resource('tahun', TahunController::class);
+Route::get('/addtahun', [TahunController::class, 'create']);
+Route::put('/postTahun', [TahunController::class, 'store']);
+Route::put('/postUpdateTahun', [TahunController::class, 'update']);
+Route::get('/editTahun', [TahunController::class, 'edit']);
+
+
+//kelas
+Route::resource('kelas', KelasController::class);
+Route::get('/addKelas', [KelasController::class, 'create']);
+Route::put('/postKelas', [KelasController::class, 'store']);
+Route::put('/postUpdateKelas', [KelasController::class, 'update']);
+Route::get('/editKelas', [KelasController::class, 'edit']);
+
+//user admin
+Route::resource('admin', AdminController::class);
+Route::get('/addAdmin', [AdminController::class, 'create']);
+Route::put('/postAdmin', [AdminController::class, 'store']);
+Route::put('/postUpdateAdmin', [AdminController::class, 'update']);
+Route::get('/editAdmin', [AdminController::class, 'edit']);

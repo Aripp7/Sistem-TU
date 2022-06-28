@@ -25,6 +25,7 @@ class Siswa extends Migration
             $table->string('nama_ayah', 50);
             $table->string('nama_ibu', 50);
             $table->string('kelas', 50);
+            $table->integer('id_kelas', 50)->unique();
         });
     }
 
