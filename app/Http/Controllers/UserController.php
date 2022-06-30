@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+
 
 class UserController extends Controller
 {
@@ -13,7 +15,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+        $datas = User::all();
+        return view('User.index', compact('datas'));
     }
 
     /**
@@ -23,7 +26,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        //
+        $model = new User();
+        return view('User.add', compact('model'));
     }
 
     /**
@@ -34,7 +38,16 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $model = new User;
+        $model->nama = $request->nama;
+        $model->username = $request->username;
+        $model->email = $request->email;
+        $model->password = $request->password;
+        $model->save();
+
+
+
+        return redirect('User');
     }
 
     /**
@@ -56,7 +69,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        $model =  User::find($id);
+        return view('pegawai.edit', compact('model'));
     }
 
     /**
@@ -68,7 +82,16 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $model =  User::find($id);
+        $model->nama = $request->nama;
+        $model->username = $request->username;
+        $model->email = $request->email;
+        $model->password = $request->password;
+        $model->update();
+
+
+
+        return redirect('User');
     }
 
     /**
@@ -79,6 +102,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $model =  User::find($id);
+        $model->delete();
+        return redirect('User');
     }
 }

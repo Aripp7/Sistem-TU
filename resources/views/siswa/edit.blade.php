@@ -37,11 +37,11 @@
                 </div>
             </div>
             <div class="form-group">
-                <label class="control-label col-sm-2" for="jenis_kelamin">Jenis Kelamin:</label>
-                <select class="form-control select2" name="jenis_kelamin" style="width: 50%; margin-left: 8px;">
+                <label class="control-label col-sm-2" for="Jenis_kelamin">Jenis Kelamin:</label>
+                <select class="form-control select2" name="Jenis_kelamin" style="width: 50%; margin-left: 8px;">
                     <option>Pilih Jenis Kelamin</option>
-                    <option {{$model->Jenis_kelamin == 'L ' ? 'selected' : '' }}>Laki-laki</option>
-                    <option {{$model->Jenis_kelamin == 'P ' ? 'selected' : '' }}>Perempuan</option>
+                    <option {{$model->Jenis_kelamin == 'L' ? 'selected' : '' }}>Laki-laki</option>
+                    <option {{$model->Jenis_kelamin == 'P' ? 'selected' : '' }}>Perempuan</option>
                 </select>
             </div>
 

@@ -14,7 +14,8 @@
             </ol>
         </div>
     </div>
-</div><!-- /.container-fluid -->
+</div>
+<!-- /.container-fluid -->
 <!-- Default box -->
 <div class="card">
     <div class="card-header">

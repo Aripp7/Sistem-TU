@@ -88,13 +88,7 @@
                 <small style="margin-left: 10px;">Contoh : XI IPA 2</small>
             </div>
 
-            <div class="form-group">
-                <label class="control-label col-sm-2" for="kelas">Suara:</label>
-                <div class="col-sm-10">
-                    <input type="text" x-webkit-speech class="form-control" id="kelas" value="{{$model->kelas}}">
-                </div>
-                <small style="margin-left: 10px;">Contoh : XI IPA 2</small>
-            </div>
+
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">

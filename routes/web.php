@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\SiswaController;
@@ -52,8 +52,9 @@ Route::get('/logout', [LoginController::class, 'logout']);
 //siswa
 Route::resource('siswa', SiswaController::class);
 Route::get('/addSiswa', [SiswaController::class, 'create']);
-Route::put('/postSiswa', [SiswaController::class, 'store']);
-Route::get('/editSiswa', [SiswaController::class, 'edit']);
+Route::put('/postSiswa', 'SiswaController@store')->name('posSiswa');
+// Route::get('/editSiswa/{id}', 'SiswaController@edit')->name('editSiswa');
+Route::get('/editSiswa/{id}', [SiswaController::class, 'edit'])->name('editSiswa');
 Route::put('/postUpdateSiswa', [SiswaController::class, 'update']);
 
 //tendik
@@ -79,8 +80,8 @@ Route::put('/postUpdateKelas', [KelasController::class, 'update']);
 Route::get('/editKelas', [KelasController::class, 'edit']);
 
 //user admin
-Route::resource('admin', AdminController::class);
-Route::get('/addAdmin', [AdminController::class, 'create']);
-Route::put('/postAdmin', [AdminController::class, 'store']);
-Route::put('/postUpdateAdmin', [AdminController::class, 'update']);
-Route::get('/editAdmin', [AdminController::class, 'edit']);
+Route::resource('admin', UserController::class);
+Route::get('/addAdmin', [UserController::class, 'create']);
+Route::put('/postAdmin', [UserController::class, 'store']);
+Route::put('/postUpdateAdmin', [UserController::class, 'update']);
+Route::get('/editAdmin', [UserController::class, 'edit']);

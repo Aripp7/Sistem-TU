@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Siswa;
+
+use App\Models\Kelas;
 use Illuminate\Http\Request;
 
 class SiswaController extends Controller
@@ -29,6 +31,7 @@ class SiswaController extends Controller
      */
     public function create()
     {
+        // $kelas = Kelas::all();
         $model = new Siswa();
         return view('siswa.add', compact('model'));
     }
@@ -60,7 +63,10 @@ class SiswaController extends Controller
 
 
 
-        return redirect()->route('siswa.index')->with('succes', 'Data Berhasil di Input');
+        return redirect()->route('siswa.index')->with('success', 'Data Berhasil di Input');
+        // return back()->with([
+        //     'error' => 'Login Gagal!'
+        // ]);
     }
 
     /**
@@ -111,21 +117,7 @@ class SiswaController extends Controller
         $model->update();
 
 
-
-        if ($model) {
-            return redirect()
-                ->route('siswa.index')
-                ->with([
-                    'success' => 'Post has been updated successfully'
-                ]);
-        } else {
-            return redirect()
-                ->back()
-                ->withInput()
-                ->with([
-                    'error' => 'Some problem has occured, please try again'
-                ]);
-        }
+        return redirect()->route('siswa.index')->with('succes', 'Data Berhasil di Update');
     }
 
     /**
@@ -140,6 +132,6 @@ class SiswaController extends Controller
         $model->delete();
 
 
-        return redirect('siswa');
+        return redirect()->route('siswa.index')->with('success', 'Data Berhasil di Dihapus');
     }
 }
