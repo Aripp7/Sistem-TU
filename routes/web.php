@@ -52,10 +52,10 @@ Route::get('/logout', [LoginController::class, 'logout']);
 //siswa
 Route::resource('siswa', SiswaController::class);
 Route::get('/addSiswa', [SiswaController::class, 'create']);
-Route::put('/postSiswa', 'SiswaController@store')->name('posSiswa');
+Route::put('/postSiswa', [SiswaController::class, 'store']);
+Route::get('editSiswa', [SiswaController::class, 'edit']);
+Route::put('/updateSiswa', [SiswaController::class, 'update']);
 // Route::get('/editSiswa/{id}', 'SiswaController@edit')->name('editSiswa');
-Route::get('/editSiswa/{id}', [SiswaController::class, 'edit'])->name('editSiswa');
-Route::put('/postUpdateSiswa', [SiswaController::class, 'update']);
 
 //tendik
 Route::resource('tendik', TendikController::class);;
@@ -68,7 +68,7 @@ Route::get('/editTendik', [TendikController::class, 'edit']);
 Route::resource('tahun', TahunController::class);
 Route::get('/addtahun', [TahunController::class, 'create']);
 Route::put('/postTahun', [TahunController::class, 'store']);
-Route::put('/postUpdateTahun', [TahunController::class, 'update']);
+Route::put('/postUpTahun', [TahunController::class, 'update']);
 Route::get('/editTahun', [TahunController::class, 'edit']);
 
 

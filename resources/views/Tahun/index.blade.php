@@ -23,6 +23,19 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card">
+                        @if(session()->has('success'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                            {{session('success')}}
+
+                        </div>
+                        @endif
+                        @if(session()->has('error'))
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            {{session('error')}}
+                            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                        </div>
+                        @endif
                         <ol class="breadcrumb float-sm-left" style="margin-left: 20px; margin-top: 10px;">
                             <a href="addtahun" class="btn btn-primary">
                                 <i class="fa fa-plus"></i>
@@ -74,4 +87,11 @@
     </section>
 
 </body>
+<script>
+    window.setTimeout(function() {
+        $(".alert").fadeTo(300, 0).slideUp(300, function() {
+            $(this).remove();
+        });
+    }, 5000);
+</script>
 @endsection

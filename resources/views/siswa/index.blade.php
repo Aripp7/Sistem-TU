@@ -60,7 +60,7 @@
                                         <th>Nama</th>
                                         <th>Tempat Lahir</th>
                                         <th>Tanggal Lahir</th>
-                                        <th>Agama</th>
+
                                         <th>Alamat</th>
                                         <th>Nama Ayah</th>
                                         <th>Nama Ibu</th>
@@ -81,7 +81,7 @@
                                         <td>{{ $values->nama }}</td>
                                         <td>{{ $values->tempat_lahir }}</td>
                                         <td>{{ $values->tgl_lahir }}</td>
-                                        <td>{{ $values->agama }}</td>
+
                                         <td>{{ $values->alamat}}</td>
                                         <td>{{ $values->nama_ayah }}</td>
                                         <td>{{ $values->nama_ibu }}</td>
@@ -91,6 +91,7 @@
                                                 @csrf
                                                 @method('DELETE')
                                                 <a href="{{ url('editSiswa',$values->id) }}" class="btn btn-success btn-xs shadow"> <span class="fas fa-edit"></span></a>
+                                                <!-- <a href="{{ url($values->id) }}" class="btn btn-warning btn-xs shadow"> <span class="fas fa-show"></span></a> -->
 
                                                 <button type="submit" class="btn btn-sm btn-danger btn-xs shadow" onclick="return confirm('Yakin Ingin Menghapus {{ $values->nama }} ? ');" action="{{url('siswa',$values->id)}}"> <span class="fas fa-trash"></span>
 

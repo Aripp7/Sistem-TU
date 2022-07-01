@@ -9,8 +9,8 @@
         </div>
         <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-                <li class="breadcrumb-item"><a href="dashboard">Home</a></li>
-                <li class="breadcrumb-item "><a href="">Data Siswa</a></li>
+                <li class="breadcrumb-item"><a href="/dashboard">Home</a></li>
+                <li class="breadcrumb-item "><a href="/siswa">Data Siswa</a></li>
                 <li class="breadcrumb-item active">Edit Siswa</li>
             </ol>
         </div>
@@ -21,9 +21,8 @@
 <section class="content" style="margin-left: 20px;">
     <div class="col">
 
-        <!-- {{csrf_field()}} -->
-        <input type="hidden" name="_method" values='PATCH'>
-        <form class="form-horizontal" method="">
+        <form class="form-horizontal" action="updateSiswa" method="Post" enctype="multipart/form-data">
+
             <div class="form-group">
                 <label class="control-label col-sm-2" for="nama">Nama:</label>
                 <div class="col-sm-10">
@@ -100,6 +99,7 @@
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <button type="submit" class="btn btn-primary btn-block">Submit</button>
+                    <a href="/siswa" type="submit" class="btn btn-danger btn-block">Batal</a>
                 </div>
             </div>
 

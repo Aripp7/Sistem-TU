@@ -39,7 +39,7 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="siswa" class="nav-link">
+                            <a href="/siswa" class="nav-link">
                                 <!-- <i class="far fa-screen-users nav-icon"></i> -->
                                 <!-- <i class="far fa-duotone fa-screen-users nav-icon"></i> -->
                                 <i class="nav-icon fas fa-th"></i>
@@ -49,21 +49,21 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="tendik" class="nav-link">
+                            <a href="/tendik" class="nav-link">
                                 <!-- <i class="far fa-circle nav-icon"></i> -->
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p class="ketek">Tenaga Pendidik</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="guru" class="nav-link">
+                            <a href="/guru" class="nav-link">
                                 <!-- <i class="far fa-circle nav-icon"></i> -->
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p class="ketek">Guru</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="tahun" class="nav-link">
+                            <a href="/tahun" class="nav-link">
                                 <!-- <i class="far fa-circle nav-icon"></i> -->
                                 <i class="nav-icon fas fa-chart-pie"></i>
                                 <p class="ketek">Tahun Ajaran</p>
@@ -72,7 +72,7 @@
 
                     </ul>
                 <li class="nav-item">
-                    <a href="master" class="nav-link">
+                    <a href="/mapel" class="nav-link">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Mata Pelajaran
@@ -84,7 +84,7 @@
 
                 </li>
                 <li class="nav-item">
-                    <a href="kelas" class="nav-link">
+                    <a href="/kelas" class="nav-link">
                         <i class="nav-icon fas fa-chart-pie"></i>
                         <p>
                             Kelas
@@ -95,7 +95,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/jadwal" class="nav-link">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>
                             Jadwal Pelajaran
@@ -130,7 +130,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="/ujian" class="nav-link">
                         <i class="nav-icon fas fa-table"></i>
                         <p>
                             Jadwal Ujian
@@ -159,7 +159,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="../gallery.html" class="nav-link">
+                    <a href="/absen" class="nav-link">
                         <i class="nav-icon far fa-image"></i>
                         <p>
                             Absensi
@@ -167,7 +167,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="../kanban.html" class="nav-link">
+                    <a href="/spp" class="nav-link">
                         <i class="nav-icon fas fa-columns"></i>
                         <p>
                             SPP
@@ -175,7 +175,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="admin" class="nav-link">
+                    <a href="/admin" class="nav-link">
                         <i class="nav-icon fas fa-columns"></i>
                         <p>
                             Admin

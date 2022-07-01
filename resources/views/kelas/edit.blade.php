@@ -24,7 +24,7 @@
 
 
             <button type="submit" class="btn btn-primary">Tambahkan</button>
-            <a href="kelas" class="btn btn-danger">Batal</a>
+            <a href="/kelas" class="btn btn-danger">Batal</a>
         </form>
 
 

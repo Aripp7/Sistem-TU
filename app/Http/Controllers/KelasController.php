@@ -46,7 +46,7 @@ class KelasController extends Controller
         $model->nama_kelas = $request->nama_kelas;
         $model->save();
 
-        return redirect('kelas');
+        return redirect()->route('kelas.index')->with('success', 'Data Kelas Berhasil di Tambahkan');
     }
 
     /**
@@ -101,6 +101,6 @@ class KelasController extends Controller
     {
         $model =  Kelas::find($id);
         $model->delete();
-        return redirect('kelas');
+        return redirect()->route('kelas.index')->with('success', 'Data Kelas Berhasil di Dihapus');
     }
 }

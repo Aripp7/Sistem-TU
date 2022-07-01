@@ -15,7 +15,7 @@ class TahunController extends Controller
     public function index()
     {
         $datas = Tahun::all();
-        return view('Tahun.index', compact('datas'));
+        return view('tahun.index', compact('datas'));
     }
 
     /**
@@ -26,7 +26,7 @@ class TahunController extends Controller
     public function create()
     {
         $model = new Tahun();
-        return view('Tahun.add', compact('model'));
+        return view('tahun.add', compact('model'));
     }
 
     /**
@@ -52,7 +52,7 @@ class TahunController extends Controller
 
 
 
-        return redirect('tahun');
+        return redirect()->route('tahun.index')->with('success', 'Tahun Ajaran Berhasil di Ditambahkan');
     }
 
 
@@ -73,10 +73,11 @@ class TahunController extends Controller
      * @param  \App\Models\Tahun  $Tahun
      * @return \Illuminate\Http\Response
      */
-    public function edit($id_tahun)
+    public function edit($id)
     {
-        $model =  Tahun::find($id_tahun);
-        return view('Tahun.edit', compact('model'));
+        $model =  Tahun::find($id);
+        // dd($model);
+        return view('tahun.edit', compact('model'));
     }
 
     /**
@@ -86,17 +87,15 @@ class TahunController extends Controller
      * @param  \App\Models\Tahun  $Tahun
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request,  $id_tahun)
+    public function update(Request $request,  $id)
     {
-        $model =  Tahun::find($id_tahun);
+        $model =  Tahun::find($id);
         $model->tahun = $request->tahun;
         $model->status = $request->status;
 
         $model->update();
 
-
-
-        return redirect('Tahun');
+        return redirect()->route('tahun.index')->with('success', 'Tahun Ajaran Berhasil di Ubah');
     }
 
     /**
@@ -109,6 +108,6 @@ class TahunController extends Controller
     {
         $model =  Tahun::find($id);
         $model->delete();
-        return redirect('tahun');
+        return redirect()->route('tahun.index')->with('success', 'Data Tahun Berhasil di Dihapus');
     }
 }
